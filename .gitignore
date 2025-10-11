@@ -7,7 +7,7 @@ node_modules
 .wrangler
 /.svelte-kit
 /build
-/dist
+# /dist until i npm it
 
 # OS
 .DS_Store

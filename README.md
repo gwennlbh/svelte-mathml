@@ -3,7 +3,9 @@
 ## Installation
 
 ```
-bun add svelte-mathml # or pnpm, npm, yarn, etc
+# not on NPM yet
+# bun add svelte-mathml # or pnpm, npm, yarn, etc
+bun add gwennlbh/svelte-mathml
 ```
 
 ## Usage
