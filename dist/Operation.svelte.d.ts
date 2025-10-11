@@ -1,6 +1,6 @@
 export default Operation;
 export type Props = {
-    operator: "+" | "-" | "/" | "*" | "=";
+    operator: "+" | "-" | "/" | "*" | "=" | "";
     lhs: import("svelte").Snippet | string;
     rhs: import("svelte").Snippet | string;
 };

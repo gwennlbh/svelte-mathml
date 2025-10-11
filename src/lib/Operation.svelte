@@ -1,7 +1,7 @@
 <script module>
 	/**
 	 * @typedef {object} Props
-	 * @property {"+"|"-"|"/"|"*"|"="} operator
+	 * @property {"+"|"-"|"/"|"*"|"="|""} operator
 	 * @property {import('svelte').Snippet | string} lhs
 	 * @property {import('svelte').Snippet | string} rhs
 	 */
@@ -20,14 +20,15 @@
 	{@render lhs()}
 {/if}
 
-<mo>
-	{#if operator === '*'}
-		&middot;
-	{:else}
-		{operator}
-	{/if}
-</mo>
-
+{#if operator}
+	<mo>
+		{#if operator === '*'}
+			&middot;
+		{:else}
+			{operator}
+		{/if}
+	</mo>
+{/if}
 {#if typeof rhs === 'string'}
 	<Atom expr={rhs} />
 {:else}
