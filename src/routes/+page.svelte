@@ -36,7 +36,21 @@
 	<Math.Line>
 		<Math.Operation operator="=" lhs="I">
 			{#snippet rhs()}
-				<Math.Matrix columns={3} a1="1" a2="0" a3="0" b1="0" b2="1" b3="0" c1="0" c2="0" c3="1" />
+				<Math.Matrix
+					brackets="[]"
+					columns={3}
+					height="Input"
+					width="Output"
+					a1="1"
+					a2="0"
+					a3="0"
+					b1="0"
+					b2="1"
+					b3="0"
+					c1="0"
+					c2="0"
+					c3="1"
+				/>
 			{/snippet}
 		</Math.Operation>
 	</Math.Line>.
@@ -56,5 +70,10 @@
 		justify-content: center;
 		height: 100vh;
 		margin: 0;
+	}
+
+	.annotation {
+		font-size: 0.65em;
+		margin-right: -0.75em;
 	}
 </style>
