@@ -9,3 +9,4 @@ export { default as Scripts } from './Scripts.svelte';
 export { default as Vector } from './Vector.svelte';
 export { default as Wrap } from './Wrap.svelte';
 export { default as Parse } from './Expression.svelte';
+export { default as Matrix } from './Matrix.svelte';

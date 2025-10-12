@@ -135,11 +135,9 @@
 {#if !expr}
 	<!-- empty -->
 {:else if !bare}
-	<math>
 		<Line>
 			<Expression bare {expr} />
 		</Line>
-	</math>
 {:else if ATOM.test(expr)}
 	<Atom {expr} />
 {:else if wrapped}
